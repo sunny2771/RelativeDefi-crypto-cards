@@ -1,7 +1,7 @@
 import classes from "./App.module.css";
 import { HiTrendingUp } from "react-icons/hi";
 import Cards from "./Cards";
-import { data } from "./CardData";
+import { data } from "./CardData/CardData";
 
 function App() {
   return (
