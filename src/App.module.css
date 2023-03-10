@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+/* reseting  */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+/* main container  */
+.container {
+  padding: 20px;
+  height: 100vh;
+  background-color: #15172b !important;
+  color: white;
+  padding: 100px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.cardContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* card css  */
+.card {
+  width: 240px;
+  height: 315px;
+  background-color: #1d1f33;
+  overflow: visible;
+  box-shadow: 0 5px 20px 2px rgb(0 0 0 / 10%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 18px;
+  border-top: 1px solid #2f3449;
+  position: relative;
+  cursor: pointer;
+}
+
+.card-img {
+  --size: 100px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  background-color: #1d1f33;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-img::before {
+  content: "";
+  border-radius: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 85%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+  border: 0.7rem solid #15172b;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 27%;
+  left: 28%;
+  object-fit: contain;
+}
+
+.bitLogo {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 27%;
+  left: 28%;
+  object-fit: contain;
+  transform: rotate(-12deg);
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0 1rem;
+}
+
+.cardInfo h6 {
+  color: #6b71a3;
+}
+
+.coinName {
+  position: absolute;
+  top: 25%;
+}
+
+.price {
+  border-top: 0.8px solid #2f3449;
+  width: 166px;
+  height: 32px;
+  background-color: #13172a;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+  gap: 10px;
+  color: #d6dae9;
+}
+
+.price span {
+  font-size: 11px;
+  font-weight: 500;
+  color: #07e797;
+}
+
+.popular_pairs {
+  border-top: 0.8px solid #2f3449;
+  width: 106px;
+  height: 32px;
+  background-color: #13172a;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  gap: 4px;
+  padding: 14px;
+}
+
+.logo_pairs {
+  width: 23px;
+  height: 25px;
+  object-fit: contain;
+}
+
+
+/*Hover*/
+.card:hover .card-img {
+  --size: 110px;
+  width: var(--size);
+  height: var(--size);
+  cursor: pointer;
+ }
+
